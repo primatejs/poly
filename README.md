@@ -13,17 +13,24 @@ incremental features in the future. It is not planned to deprecate any Svelte 4
 APIs at this point in time, and, depending on adoption, they may never be
 deprecated.
 
-### Svelte Compatibility
+## Svelte Compatibility
 
 Poly is fully compatible with Svelte 4. In particular existing code, including
 code that uses `<svelte:...>` tags, should work flawlessly. Please file an 
 issue if your existing Svelte 4 code doesn't work in Poly.
 
-### What about SvelteKit?
+## How to run
 
-If you're a user of SvelteKit, you will need to migrate your app to Primate,
-which is a full-stack framework that supports a multitude of backends and
-frontends, including Svelte. Support for Poly will be added in the coming days.
+### esbuild
+
+To run Poly with esbuild (no SSR), run `npm start` in `apps/esbuild`.
+
+### SvelteKit
+
+If you're a user of SvelteKit, you will need to migrate your app to Primate
+(https://primatejs.com), a full-stack framework that supports a multitude of
+backends and frontends, including Svelte. Support for Poly will be added in the
+coming days.
 
 ## License
 
