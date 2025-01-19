@@ -1,0 +1,7 @@
+<script>
+	import { onMount } from 'poly';
+
+	onMount(async () => {
+		await 123
+	});
+</script>

@@ -1,0 +1,18 @@
+<script>
+	import App from './App.poly';
+	import { onMount } from 'poly';
+
+	export let div;
+
+	onMount(() => {
+		const app = new App({
+			target: div
+		});
+
+		return () => {
+			app.$destroy();
+		}
+	});
+</script>
+
+<div bind:this={div} />

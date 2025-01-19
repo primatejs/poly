@@ -1,0 +1,19 @@
+<script>
+	import App from './App.poly';
+	import { onMount } from 'poly';
+
+	export let div;
+	onMount(() => {
+		const root = div.attachShadow({ mode: 'open' });
+
+		const app = new App({
+			target: root
+		});
+
+		return () => {
+			app.$destroy();
+		}
+	});
+</script>
+
+<div bind:this={div} />

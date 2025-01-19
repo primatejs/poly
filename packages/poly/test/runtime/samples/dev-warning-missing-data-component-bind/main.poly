@@ -1,0 +1,8 @@
+<script>
+	import Foo from './Foo.poly';
+
+	let x = undefined;
+	let w = 'w';
+</script>
+
+<Foo bind:w bind:x />

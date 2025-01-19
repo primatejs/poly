@@ -1,0 +1,12 @@
+<script>
+	import Nested from './Nested.poly';
+	import Foo from './Foo.poly';
+	import Bar from './Bar.poly';
+</script>
+
+<Nested>
+	Hello
+
+	<Foo slot='foo' />
+	<Bar slot='bar' />
+</Nested>

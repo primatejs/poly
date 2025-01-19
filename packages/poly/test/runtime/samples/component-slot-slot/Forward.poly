@@ -1,0 +1,7 @@
+<script>
+	import Component from './Component.poly';
+</script>
+
+<Component>
+	<slot slot="test" />
+</Component>

@@ -1,0 +1,1 @@
+span.poly-xyz::after{content:'i am a pseudo-element'}span.poly-xyz:first-child{color:red}span.poly-xyz:last-child::after{color:blue}

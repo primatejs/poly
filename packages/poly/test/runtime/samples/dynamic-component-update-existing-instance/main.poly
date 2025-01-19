@@ -1,0 +1,8 @@
+<script>
+	import Foo from './Foo.poly';
+	import Bar from './Bar.poly';
+
+	export let x;
+</script>
+
+<svelte:component this="{ x ? Foo : Bar }" x='{x}'/>

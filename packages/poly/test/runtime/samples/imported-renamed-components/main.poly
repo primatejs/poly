@@ -1,0 +1,9 @@
+<script>
+	import ComponentOne from './ComponentOne.poly';
+	import ComponentTwo from './ComponentTwo.poly';
+
+	const RenamedComponentOne = ComponentOne;
+	const RenamedComponentTwo = ComponentTwo;
+</script>
+
+<RenamedComponentOne/><RenamedComponentTwo/>

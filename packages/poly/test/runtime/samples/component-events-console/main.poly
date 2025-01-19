@@ -1,0 +1,5 @@
+<script>
+	import Widget from './Widget.poly';
+</script>
+
+<Widget on:click="{() => console.log('clicked')}"/>

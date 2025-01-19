@@ -1,0 +1,8 @@
+<script>
+	import Inner from "./Inner.poly";
+	let value = '';
+</script>
+
+<input bind:value />
+
+<Inner {value} />

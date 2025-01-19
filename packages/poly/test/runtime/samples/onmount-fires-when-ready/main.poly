@@ -1,0 +1,13 @@
+<script>
+	import Widget from './Widget.poly';
+
+	export let foo;
+</script>
+
+<div>
+	<Widget/>
+
+	{#if foo}
+		<Widget/>
+	{/if}
+</div>

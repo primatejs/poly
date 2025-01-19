@@ -1,0 +1,8 @@
+<script>
+	import { Widget } from './Widget.poly';
+	let widgets = [Widget];
+</script>
+
+{#each widgets as LazyWidget}
+	<LazyWidget.Tooltip />
+{/each}

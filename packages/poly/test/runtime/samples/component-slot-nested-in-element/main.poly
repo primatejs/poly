@@ -1,0 +1,7 @@
+<script>
+	import One from './One.poly';
+</script>
+
+<One>
+	<div slot="a">a</div>
+</One>

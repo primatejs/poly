@@ -1,0 +1,9 @@
+<script>
+	import Foo from './Foo.poly';
+</script>
+
+<Foo bar={{
+	answer() {
+		return 42;
+	}
+}} />

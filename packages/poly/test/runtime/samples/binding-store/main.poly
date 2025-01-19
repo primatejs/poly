@@ -1,0 +1,8 @@
+<script>
+	import { writable } from 'poly/store';
+
+	export const name = writable('world');
+</script>
+
+<input bind:value={$name}>
+<p>hello {$name}</p>

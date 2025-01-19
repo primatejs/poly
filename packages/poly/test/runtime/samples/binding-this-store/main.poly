@@ -1,0 +1,6 @@
+<script>
+	import { writable } from 'poly/store';
+	const foo = writable();
+</script>
+
+<div bind:this={$foo}>{typeof $foo}</div>

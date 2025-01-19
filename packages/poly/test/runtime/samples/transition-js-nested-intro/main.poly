@@ -1,0 +1,8 @@
+<script>
+	import Child from './Child.poly';
+	export let visible;
+</script>
+
+{#if visible}
+	<Child>delayed</Child>
+{/if}

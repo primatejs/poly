@@ -1,0 +1,10 @@
+<script>
+	import { setContext } from 'poly';
+	import ChildComponent from './ChildComponent.poly';
+
+	setContext('foo', true);
+
+	const content = ChildComponent.render({}, { context: new Map() }).html;
+</script>
+
+<div>{@html content}</div>

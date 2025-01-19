@@ -1,0 +1,8 @@
+<script>
+	import { getContext } from 'poly';
+	import { ID } from './Nested.poly';
+
+	const name = getContext('test');
+</script>
+
+<div>{name}</div>

@@ -1,0 +1,5 @@
+<script>
+	import Main from './nested/main.poly';
+</script>
+
+<Main/>

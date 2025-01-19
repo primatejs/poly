@@ -1,0 +1,5 @@
+<script>
+	import LazyLoad from './LazyLoad.poly';
+</script>
+
+<LazyLoad load="{() => import('./Foo.poly')}"/>

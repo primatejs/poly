@@ -1,0 +1,10 @@
+<script>
+	import EEE from './EEE.poly';
+	import RRR from './RRR.poly';
+</script>
+
+{#if "Eva".startsWith('E')}
+	<EEE/>
+{:else}
+	<RRR/>
+{/if}

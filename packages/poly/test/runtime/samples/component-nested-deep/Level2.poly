@@ -1,0 +1,6 @@
+<script>
+	import Level3 from './Level3.poly';
+</script>
+
+<span>level 2</span>
+<slot></slot>

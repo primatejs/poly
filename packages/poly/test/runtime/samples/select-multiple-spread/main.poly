@@ -1,0 +1,7 @@
+<script>
+	import Select from './select.poly';
+
+	export let attrs = { value: ['1'] };
+</script>
+
+<Select {attrs} />

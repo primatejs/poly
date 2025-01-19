@@ -1,0 +1,6 @@
+<script>
+	import { getContext } from 'poly';
+	const num = getContext('test');
+</script>
+
+<p>Context value: {num}</p>

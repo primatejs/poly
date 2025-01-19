@@ -1,0 +1,15 @@
+<script>
+	import { setContext } from 'poly';
+	import ChildComponent from './ChildComponent.poly';
+
+	setContext('foo', true);
+
+	function render(node) {
+		new ChildComponent({
+			target: node,
+			context: new Map()
+		});
+	}
+</script>
+
+<div use:render />

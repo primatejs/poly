@@ -1,0 +1,10 @@
+<script>
+	import Green from './Green.poly';
+	import Red from './Red.poly';
+
+	export let foo;
+	export let x;
+</script>
+
+<p>parent {foo}</p>
+<svelte:component this="{x ? Green : Red}" bind:foo />

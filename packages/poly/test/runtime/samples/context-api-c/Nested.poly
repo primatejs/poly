@@ -1,0 +1,11 @@
+<script>
+	import { setContext } from 'poly';
+
+	export let value = '';
+
+	if (value) {
+		setContext('test', value);
+	}
+</script>
+
+<slot></slot>

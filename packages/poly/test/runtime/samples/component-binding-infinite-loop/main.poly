@@ -1,0 +1,8 @@
+<script>
+	import A from './A.poly';
+
+	export let currentIdentifier = 2;
+</script>
+
+<A bind:currentIdentifier />
+<A bind:currentIdentifier />

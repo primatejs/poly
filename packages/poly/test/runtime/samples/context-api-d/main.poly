@@ -1,0 +1,8 @@
+<script>
+  import Nested from './Nested.poly';
+  import Leaf from './Leaf.poly';
+</script>
+
+<Nested>
+  <Leaf />
+</Nested>

@@ -1,0 +1,8 @@
+<script>
+	import Level2 from './Level2.poly';
+	import Level3 from './Level3.poly';
+</script>
+
+<Level2>
+	<Level3 />
+</Level2>

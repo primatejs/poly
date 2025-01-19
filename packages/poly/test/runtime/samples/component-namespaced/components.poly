@@ -1,0 +1,5 @@
+<script context="module">
+  import Foo from './Foo.poly';
+
+  export const Components = { Foo };
+</script>

@@ -1,0 +1,15 @@
+<script>
+	import { onDestroy, onMount } from 'poly';
+
+	export let events;
+
+	onMount(() => {
+		events = ['mount'];
+
+		return () => {
+			events.push('destroy');
+		};
+	});
+</script>
+
+<div></div>

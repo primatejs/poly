@@ -1,0 +1,8 @@
+<script>
+	import Outer from './Outer.poly';
+	import Inner from './Inner.poly';
+</script>
+
+<Outer>
+	<Inner>foo</Inner>
+</Outer>

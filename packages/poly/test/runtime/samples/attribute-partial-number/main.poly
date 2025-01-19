@@ -1,0 +1,5 @@
+<script>
+	import Component from './Component.poly';
+</script>
+
+<Component value="10px"/>

@@ -1,0 +1,23 @@
+<script>
+	import Outer from "./Outer.poly";
+	import Inner from "./Inner.poly";
+	import {model} from "./store.poly";
+
+	export let props = '';
+	export let fallback = '';
+
+	export function getSubscriberCount() {
+		return model.getCount();
+	}
+</script>
+
+<Outer slotProps={props} defaultValue={fallback} let:slotProps>    
+	<Inner value={slotProps} />
+</Outer>
+
+<Outer slotProps={props} defaultValue={fallback} let:slotProps>    
+	<Inner value={slotProps} />
+</Outer>
+
+<Outer slotProps={props} defaultValue={fallback}>
+</Outer>

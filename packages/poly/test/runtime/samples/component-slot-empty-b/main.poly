@@ -1,0 +1,6 @@
+<script>
+	import Nested from "./Nested.poly";
+</script>
+<Nested>
+	<input slot="slot1">
+</Nested>

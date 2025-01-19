@@ -1,0 +1,16 @@
+<script>
+	import { onMount } from 'poly';
+	import { get_current_component } from 'poly/internal';
+
+	let gotException = 0;
+
+	onMount(() => {
+		try {
+			get_current_component();
+		} catch (error) {
+			gotException++;
+		}
+	});
+</script>
+
+{gotException}

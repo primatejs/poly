@@ -1,0 +1,18 @@
+<script>
+	import Foo from './Foo.poly';
+	import Bar from './Bar.poly';
+	import Baz from './Baz.poly';
+
+	export let y;
+	export let x;
+</script>
+
+<p>y: {y}</p>
+
+{#if x}
+	<Foo bind:y/>
+{:else}
+	<Bar bind:y/>
+{/if}
+
+<Baz bind:x/>

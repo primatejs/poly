@@ -1,0 +1,124 @@
+{
+  "name": "poly",
+  "version": "0.7.0",
+  "description": "Svelte 4 LTS fork",
+  "type": "module",
+  "module": "src/runtime/index.js",
+  "main": "src/runtime/index.js",
+  "files": [
+    "src",
+    "!src/**/tsconfig.json",
+    "types",
+    "compiler.*",
+    "register.js",
+    "index.d.ts",
+    "store.d.ts",
+    "animate.d.ts",
+    "transition.d.ts",
+    "easing.d.ts",
+    "motion.d.ts",
+    "action.d.ts",
+    "elements.d.ts",
+    "poly-html.d.ts",
+    "README.md"
+  ],
+  "imports": {
+    "#version": "./src/shared/version.js"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./types/index.d.ts",
+      "browser": {
+        "default": "./src/runtime/index.js"
+      },
+      "default": "./src/runtime/ssr.js"
+    },
+    "./compiler": {
+      "types": "./types/index.d.ts",
+      "require": "./compiler.cjs",
+      "default": "./src/compiler/index.js"
+    },
+    "./action": {
+      "types": "./types/index.d.ts"
+    },
+    "./animate": {
+      "types": "./types/index.d.ts",
+      "default": "./src/runtime/animate/index.js"
+    },
+    "./easing": {
+      "types": "./types/index.d.ts",
+      "default": "./src/runtime/easing/index.js"
+    },
+    "./internal": "./src/runtime/internal/index.js",
+    "./motion": {
+      "types": "./types/index.d.ts",
+      "default": "./src/runtime/motion/index.js"
+    },
+    "./store": {
+      "types": "./types/index.d.ts",
+      "default": "./src/runtime/store/index.js"
+    },
+    "./internal/disclose-version": "./src/runtime/internal/disclose-version/index.js",
+    "./transition": {
+      "types": "./types/index.d.ts",
+      "default": "./src/runtime/transition/index.js"
+    },
+    "./elements": {
+      "types": "./elements.d.ts"
+    }
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "types": "types/index.d.ts",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "vitest run && echo \"manually check that there are no type errors in test/types by opening the files in there\"",
+    "build": "rollup -c && pnpm types",
+    "generate:version": "node ./scripts/generate-version.js",
+    "dev": "rollup -cw",
+    "posttest": "agadoo src/internal/index.js",
+    "prepublishOnly": "pnpm build",
+    "types": "node ./scripts/generate-dts.js",
+    "lint": "eslint \"{scripts,src,test}/**/*.js\" --cache"
+  },
+  "repository": "https://github.com/terrablue/poly.git",
+  "license": "MIT",
+  "bugs": "https://github.com/terrablue/poly/issues",
+  "dependencies": {
+    "@ampproject/remapping": "^2.3.0",
+    "@jridgewell/sourcemap-codec": "^1.5.0",
+    "@jridgewell/trace-mapping": "^0.3.25",
+    "@types/estree": "^1.0.6",
+    "acorn": "^8.14.0",
+    "aria-query": "^5.3.2",
+    "axobject-query": "^4.1.0",
+    "code-red": "^1.0.4",
+    "css-tree": "^2.3.1",
+    "estree-walker": "^3.0.3",
+    "is-reference": "^3.0.3",
+    "locate-character": "^3.0.0",
+    "magic-string": "^0.30.17",
+    "periscopic": "^3.1.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@types/aria-query": "^5.0.4",
+    "agadoo": "^3.0.0",
+    "dts-buddy": "^0.4.7",
+    "esbuild": "^0.24.2",
+    "happy-dom": "^9.20.3",
+    "jsdom": "22.0.0",
+    "kleur": "^4.1.5",
+    "playwright": "^1.49.1",
+    "rollup": "^3.26.2",
+    "source-map": "^0.7.4",
+    "tiny-glob": "^0.2.9",
+    "typescript": "~5.4.5",
+    "vitest": "^0.33.0"
+  }
+}

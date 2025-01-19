@@ -1,0 +1,11 @@
+<script>
+	import Outer from './Outer.poly';
+	import Inner from './Inner.poly';
+
+	export let foo = true;
+</script>
+
+<Outer {foo}>
+	One
+	<Inner/>
+</Outer>

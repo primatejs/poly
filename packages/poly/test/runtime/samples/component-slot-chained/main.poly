@@ -1,0 +1,9 @@
+<script>
+	import Outer from './Outer.poly';
+
+	export let text = 'one';
+</script>
+
+<Outer>
+	{text}
+</Outer>

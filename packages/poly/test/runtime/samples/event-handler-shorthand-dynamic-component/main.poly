@@ -1,0 +1,5 @@
+<script>
+	import Widget from './Widget.poly';
+</script>
+
+<svelte:component this={Widget} on:foo/>

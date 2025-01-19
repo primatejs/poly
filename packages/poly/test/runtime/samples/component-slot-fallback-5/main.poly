@@ -1,0 +1,5 @@
+<script>
+	import Inner from "./Inner.poly";
+</script>
+
+<Inner></Inner>

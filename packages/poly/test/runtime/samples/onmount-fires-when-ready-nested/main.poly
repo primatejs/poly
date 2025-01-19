@@ -1,0 +1,9 @@
+<script>
+	import Widget from './Widget.poly';
+	import ParentWidget from './ParentWidget.poly';
+</script>
+
+<div>
+	<Widget/>
+	<ParentWidget />
+</div>

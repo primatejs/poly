@@ -1,0 +1,9 @@
+<script>
+	import { onMount } from 'poly';
+
+	onMount(() => {
+		console.log(42);
+	});
+</script>
+
+<div></div>

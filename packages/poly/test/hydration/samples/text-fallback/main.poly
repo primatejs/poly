@@ -1,0 +1,11 @@
+<script>
+	import Nested from './Nested.poly'
+</script>
+
+<Nested>
+	<div slot="foo">
+		foo override
+	</div>
+
+	default
+</Nested>

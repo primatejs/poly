@@ -1,0 +1,13 @@
+<script>
+	import { onMount } from 'poly';
+	import Two from './Two.poly';
+
+	export let snapshot;
+	export let foo;
+
+	onMount(() => {
+		snapshot = foo();
+	});
+</script>
+
+<Two bind:foo/>

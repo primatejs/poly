@@ -1,0 +1,9 @@
+<script context="module">
+	import { FOO } from './dummy.poly';
+</script>
+
+<script>
+	let FOO;
+</script>
+
+{FOO}

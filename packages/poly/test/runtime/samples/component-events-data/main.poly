@@ -1,0 +1,10 @@
+<script>
+	import { createEventDispatcher } from 'poly';
+	import Widget from './Widget.poly';
+
+	const dispatch = createEventDispatcher();
+</script>
+
+<div>
+	<Widget on:select='{event => dispatch("select", event.detail.selection)}'/>
+</div>

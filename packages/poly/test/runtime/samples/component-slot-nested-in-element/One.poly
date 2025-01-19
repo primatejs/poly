@@ -1,0 +1,11 @@
+<script>
+	import Two from './Two.poly';
+</script>
+
+<Two>
+	<div slot="b">
+		<div>
+			<slot name="a"></slot>
+		</div>
+	</div>
+</Two>

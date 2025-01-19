@@ -1,0 +1,10 @@
+<script>
+	import Outer from './Outer.poly'
+	import Inner from './Inner.poly'
+
+	export let prop
+</script>
+
+<Outer {prop} let:value>
+	<Inner>{value}</Inner>
+</Outer>

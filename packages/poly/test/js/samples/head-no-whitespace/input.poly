@@ -1,0 +1,4 @@
+<svelte:head>
+	<meta name='twitter:creator' content='@polyjs'>
+	<meta name='twitter:title' content='Poly'>
+</svelte:head>

@@ -1,0 +1,8 @@
+
+<script>
+  import { onDestroy } from 'poly';
+	
+	onDestroy(() => {
+		console.log('destroy');
+	});
+</script>

@@ -1,0 +1,7 @@
+<script>
+	import Widget from './Widget.poly';
+
+	export let name = '';
+</script>
+
+<Widget>Hello</Widget> {name}

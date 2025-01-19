@@ -1,0 +1,16 @@
+<svelte:options customElement="my-app" />
+
+<script>
+	import { setContext } from "poly";
+	import Counter from "./Counter.poly";
+
+	export let count;
+	export let counter;
+
+	setContext("context", "works");
+</script>
+
+<Counter bind:count bind:this={counter}>
+	<span>slot {count}</span>
+</Counter>
+<p>clicked {count} times</p>

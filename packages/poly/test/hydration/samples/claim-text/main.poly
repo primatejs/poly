@@ -1,0 +1,8 @@
+<script>
+	import Layout from './Layout.poly';
+	import Component from './Component.poly';
+</script>
+
+<Layout>
+	<Component />
+</Layout>

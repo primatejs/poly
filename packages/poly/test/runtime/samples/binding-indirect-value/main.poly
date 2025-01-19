@@ -1,0 +1,8 @@
+<script>
+	import Component from "./Component.poly";
+
+	let value = "foo";
+</script>
+
+Parent component "{value}"<br />
+<Component bind:value />

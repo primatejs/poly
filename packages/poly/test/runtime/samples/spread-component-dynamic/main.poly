@@ -1,0 +1,7 @@
+<script>
+	import Foo from './Foo.poly';
+
+	export let props;
+</script>
+
+<svelte:component this={Foo} {...props} />

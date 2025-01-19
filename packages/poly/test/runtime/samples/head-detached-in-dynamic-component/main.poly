@@ -1,0 +1,8 @@
+<script>
+	import A from './A.poly';
+	import B from './B.poly';
+
+	export let x = true;
+</script>
+
+<svelte:component this="{x ? A : B}"/>

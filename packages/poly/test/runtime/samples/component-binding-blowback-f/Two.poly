@@ -1,0 +1,10 @@
+<script>
+	import { onMount } from 'poly';
+
+	export let i, j;
+	export let value;
+
+	onMount(() => {
+		value = { i, j };
+	});
+</script>

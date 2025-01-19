@@ -1,0 +1,8 @@
+<script>
+	import Inner from './Inner.poly';
+  export let log;
+</script>
+
+<Inner {log} let:key let:set>
+	<slot {key} set={(value) => set(key, value)} />
+</Inner>

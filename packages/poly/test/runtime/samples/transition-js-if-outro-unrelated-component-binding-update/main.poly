@@ -1,0 +1,8 @@
+<script>
+	import Component from "./Component.poly";
+	let condition = true;
+</script>
+
+{#if condition}
+	<Component bind:condition />
+{/if}

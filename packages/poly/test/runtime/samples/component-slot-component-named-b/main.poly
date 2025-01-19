@@ -1,0 +1,10 @@
+<script>
+	import Nested from './Nested.poly';
+	import Hello from './Hello.poly';
+
+	let name = 'world';
+</script>
+
+<Nested>
+	<Hello slot="name" {name} />
+</Nested>

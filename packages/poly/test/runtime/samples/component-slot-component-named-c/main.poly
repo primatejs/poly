@@ -1,0 +1,13 @@
+<script>
+	import Nested from './Nested.poly';
+	import Hello from './Hello.poly';
+	import World from './World.poly';
+</script>
+
+<Nested>
+	<Hello slot="name" />
+</Nested>
+
+<Nested>
+	<World slot="name" />
+</Nested>

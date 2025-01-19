@@ -1,0 +1,6 @@
+<script>
+	import Nested from './Nested.poly';
+</script>
+
+<Nested>
+</Nested>

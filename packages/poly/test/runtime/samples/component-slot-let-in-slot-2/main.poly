@@ -1,0 +1,11 @@
+<script>
+	import Outer from './Outer.poly'
+	import Inner from './Inner.poly'
+
+	export let prop
+	export let log;
+</script>
+
+<Outer {prop} let:value>
+	<Inner><button on:click={() => { log(value); }} /></Inner>
+</Outer>

@@ -1,0 +1,6 @@
+<script>
+  import Inner from './Inner.poly';
+</script>
+
+<button on:click>click me</button>
+<Inner on:bar />

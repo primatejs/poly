@@ -1,0 +1,7 @@
+<script>
+	import Widget from './Widget.poly';
+
+	function foo() {}
+</script>
+
+<Widget animate:foo />

@@ -1,0 +1,10 @@
+<script>
+	import A from './A.poly';
+	import B from './B.poly';
+</script>
+
+<svelte:head>
+	<title>Main</title>
+</svelte:head>
+<A />
+<B />

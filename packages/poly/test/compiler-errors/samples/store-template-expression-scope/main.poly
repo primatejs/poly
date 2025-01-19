@@ -1,0 +1,9 @@
+<script>
+	import { writable } from 'poly/store';
+	const store = writable();
+</script>
+
+<button
+	on:click={(store) => {
+		$store = Math.random();
+	}} />

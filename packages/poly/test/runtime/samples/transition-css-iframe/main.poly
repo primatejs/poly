@@ -1,0 +1,8 @@
+<script>
+	import Frame from './Frame.poly';
+	import Foo from './Foo.poly';
+
+	export let visible;
+</script>
+
+<Frame component={Foo} {visible}/>
