@@ -1,5 +1,11 @@
 <script>
+  import { onMount } from "svelte";
+
   let count = 0;
+
+  onMount(() => {
+    count = count + 1;
+  });
 </script>
 
 Count: {count}

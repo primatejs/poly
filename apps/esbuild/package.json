@@ -7,7 +7,7 @@
     "@rcompat/fs": "^0.9.0",
     "@rcompat/http": "^0.8.1",
     "esbuild": "^0.24.2",
-    "poly": "0.7"
+    "poly": "workspace:^"
   },
   "scripts": {
     "start": "node server/index.js"

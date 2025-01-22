@@ -6,7 +6,7 @@ const css_filter = /\.polycss$/u;
 const root_filter = /^root:poly$/u;
 
 const compile = text => {
-  const options = { generate: "dom", hydratable: true, accessors: true };
+  const options = { generate: "dom", hydratable: true };
   const { js, css } = compiler.compile(text, options);
   return { js: js.code, css: css?.code ?? null };
 };
