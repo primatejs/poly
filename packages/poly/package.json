@@ -1,6 +1,6 @@
 {
   "name": "poly",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "description": "Svelte 4 LTS fork",
   "type": "module",
   "module": "src/runtime/index.js",
