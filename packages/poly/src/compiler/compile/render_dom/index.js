@@ -7,6 +7,7 @@ import { apply_preprocessor_sourcemap } from "../../utils/mapped_code.js";
 import { flatten } from "../../utils/flatten.js";
 import check_enable_sourcemap from "../utils/check_enable_sourcemap.js";
 import { push_array } from "../../utils/push_array.js";
+import migrate_svelte_imports from "../utils/migrate_svelte_imports.js";
 
 /**
  * @param {import('../Component.js').default} component
@@ -14,6 +15,8 @@ import { push_array } from "../../utils/push_array.js";
  * @returns {{ js: import('estree').Node[]; css: import('../../interfaces.js').CssResult; }}
  */
 export default function dom(component, options) {
+  migrate_svelte_imports(component);
+
   const { name } = component;
   const renderer = new Renderer(component, options);
   const { block } = renderer;

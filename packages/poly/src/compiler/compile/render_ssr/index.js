@@ -5,6 +5,7 @@ import { extract_names } from "periscopic";
 import { walk } from "estree-walker";
 import { invalidate } from "../render_dom/invalidate.js";
 import check_enable_sourcemap from "../utils/check_enable_sourcemap.js";
+import migrate_svelte_imports from "../utils/migrate_svelte_imports.js";
 
 /**
  * @param {import('../Component.js').default} component
@@ -12,6 +13,8 @@ import check_enable_sourcemap from "../utils/check_enable_sourcemap.js";
  * @returns {{ js: import('estree').Node[]; css: import('../../interfaces.js').CssResult; }}
  */
 export default function ssr(component, options) {
+  migrate_svelte_imports(component);
+
   const renderer = new Renderer({
     name: component.name,
   });
