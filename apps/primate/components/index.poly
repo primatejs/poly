@@ -1,0 +1,13 @@
+<script>
+  import { onMount } from "poly";
+
+  let count = 0;
+
+  onMount(() => {
+    count = count + 1;
+  });
+</script>
+
+Count: {count}
+
+<button on:click={() => count++}>increment</button>
