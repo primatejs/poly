@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "publish": "pnpm -r --access=public publish",
+    "upgrade": "pnpm -r update -i -L",
     "test": "pnpm -r test",
     "build": "pnpm -r build",
     "check": "cd packages/poly && pnpm build && cd ../../ && pnpm -r check",
@@ -13,9 +15,9 @@
   "repository": "https://github.com/terrablue/poly.git",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/js": "^9.18.0",
-    "@types/node": "^22.10.7",
-    "eslint": "^9.18.0",
+    "@eslint/js": "^9.19.0",
+    "@types/node": "^22.10.10",
+    "eslint": "^9.19.0",
     "livetypes": "^0.2.0",
     "maximin": "^0.4.0",
     "tsx": "^4.19.2",
