@@ -2,7 +2,7 @@ import Wrapper from "./shared/Wrapper.js";
 import FragmentWrapper from "./Fragment.js";
 import create_debugging_comment from "./shared/create_debugging_comment.js";
 import { get_slot_definition } from "./shared/get_slot_definition.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import { sanitize } from "../../../utils/names.js";
 import { extract_names } from "periscopic";
 import { add_const_tags, add_const_tags_context } from "./shared/add_const_tags.js";

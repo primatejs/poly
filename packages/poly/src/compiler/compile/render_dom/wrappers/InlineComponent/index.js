@@ -1,4 +1,4 @@
-import { b, p, x } from "code-red";
+import { b, p, x } from "#code-red";
 import { extract_ignores_above_node } from "../../../../utils/extract_poly_ignore.js";
 import { sanitize } from "../../../../utils/names.js";
 import { namespaces } from "../../../../utils/namespaces.js";

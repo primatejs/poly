@@ -1,5 +1,5 @@
 import { namespaces } from "../../../utils/namespaces.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import Tag from "./shared/Tag.js";
 import { is_head } from "./shared/is_head.js";
 

@@ -1,4 +1,4 @@
-import { b } from "code-red";
+import { b } from "#code-red";
 
 /**
  * @param {any} program

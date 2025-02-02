@@ -1,6 +1,6 @@
 import Wrapper from "./shared/Wrapper.js";
 import add_to_set from "../../utils/add_to_set.js";
-import { b, p } from "code-red";
+import { b, p } from "#code-red";
 
 /** @extends Wrapper<import('../../nodes/DebugTag.js').default> */
 export default class DebugTagWrapper extends Wrapper {

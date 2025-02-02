@@ -1,4 +1,4 @@
-import * as code_red from "code-red";
+import * as code_red from "#code-red";
 
 /**
  * @param {string} source

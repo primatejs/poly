@@ -1,4 +1,4 @@
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import Expression from "../../../nodes/shared/Expression.js";
 
 /**

@@ -1,4 +1,4 @@
-import { x } from "code-red";
+import { x } from "#code-red";
 
 /**
  * @template {import('../../../../interfaces.js').TemplateNode} [NodeType=import('../../../../interfaces.js').TemplateNode]

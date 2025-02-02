@@ -2,7 +2,7 @@ import { string_literal } from "../utils/stringify.js";
 import add_to_set from "../utils/add_to_set.js";
 import Node from "./shared/Node.js";
 import Expression from "./shared/Expression.js";
-import { x } from "code-red";
+import { x } from "#code-red";
 import compiler_warnings from "../compiler_warnings.js";
 
 /** @extends Node<'Attribute' | 'Spread', import('./Element.js').default> */

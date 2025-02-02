@@ -1,6 +1,6 @@
 import { string_literal } from "../../utils/stringify.js";
 import { get_attribute_value } from "./shared/get_attribute_value.js";
-import { p, x } from "code-red";
+import { p, x } from "#code-red";
 import { namespaces } from "../../../utils/namespaces.js";
 
 /** @param {any} attribute */

@@ -1,4 +1,4 @@
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import Wrapper from "./shared/Wrapper.js";
 import { string_literal } from "../../utils/stringify.js";
 import add_to_set from "../../utils/add_to_set.js";

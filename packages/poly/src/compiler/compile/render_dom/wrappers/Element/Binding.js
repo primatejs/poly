@@ -1,4 +1,4 @@
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import get_object from "../../../utils/get_object.js";
 import replace_object from "../../../utils/replace_object.js";
 import flatten_reference from "../../../utils/flatten_reference.js";

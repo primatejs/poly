@@ -1,6 +1,6 @@
 import Block from "./Block.js";
 import FragmentWrapper from "./wrappers/Fragment.js";
-import { x } from "code-red";
+import { x } from "#code-red";
 import flatten_reference from "../utils/flatten_reference.js";
 import { reserved_keywords } from "../utils/reserved_keywords.js";
 import { renderer_invalidate } from "./invalidate.js";

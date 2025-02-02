@@ -4,7 +4,7 @@ import FragmentWrapper from "../Fragment.js";
 import { escape_html, string_literal } from "../../../utils/stringify.js";
 import TextWrapper from "../Text.js";
 import fix_attribute_casing from "./fix_attribute_casing.js";
-import { b, x, p } from "code-red";
+import { b, x, p } from "#code-red";
 import { namespaces } from "../../../../utils/namespaces.js";
 import AttributeWrapper from "./Attribute.js";
 import StyleAttributeWrapper from "./StyleAttribute.js";

@@ -1,4 +1,4 @@
-import { x } from "code-red";
+import { x } from "#code-red";
 import { get_const_tags } from "./shared/get_const_tags.js";
 
 /**

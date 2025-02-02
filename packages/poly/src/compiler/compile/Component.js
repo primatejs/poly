@@ -18,7 +18,7 @@ import fuzzymatch from "../utils/fuzzymatch.js";
 import get_object from "./utils/get_object.js";
 import add_to_set from "./utils/add_to_set.js";
 import check_graph_for_cycles from "./utils/check_graph_for_cycles.js";
-import { print, b } from "code-red";
+import { print, b } from "#code-red";
 import { is_reserved_keyword } from "./utils/reserved_keywords.js";
 import { apply_preprocessor_sourcemap } from "../utils/mapped_code.js";
 import { clone } from "../utils/clone.js";

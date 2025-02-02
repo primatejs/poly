@@ -1,4 +1,4 @@
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import Wrapper from "./Wrapper.js";
 
 /**

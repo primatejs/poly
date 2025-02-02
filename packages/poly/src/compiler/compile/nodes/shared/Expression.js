@@ -5,7 +5,7 @@ import { create_scopes, extract_names } from "../../utils/scope.js";
 import { sanitize } from "../../../utils/names.js";
 import get_object from "../../utils/get_object.js";
 import is_dynamic from "../../render_dom/wrappers/shared/is_dynamic.js";
-import { b } from "code-red";
+import { b } from "#code-red";
 import { invalidate } from "../../render_dom/invalidate.js";
 import { is_reserved_keyword } from "../../utils/reserved_keywords.js";
 import replace_object from "../../utils/replace_object.js";

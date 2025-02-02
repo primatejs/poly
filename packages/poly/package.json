@@ -23,7 +23,8 @@
     "README.md"
   ],
   "imports": {
-    "#version": "./src/shared/version.js"
+    "#version": "./src/shared/version.js",
+    "#code-red": "./code-red/src/index.js"
   },
   "exports": {
     "./package.json": "./package.json",
@@ -75,6 +76,7 @@
   "scripts": {
     "check": "tsc --noEmit",
     "test": "vitest run && echo \"manually check that there are no type errors in test/types by opening the files in there\"",
+    "test-code-red": "cd code-red && uvu test test test.js",
     "build": "rollup -c && pnpm types",
     "generate:version": "node ./scripts/generate-version.js",
     "dev": "rollup -cw",
@@ -94,7 +96,6 @@
     "acorn": "^8.14.0",
     "aria-query": "^5.3.2",
     "axobject-query": "^4.1.0",
-    "code-red": "^1.0.4",
     "css-tree": "^2.3.1",
     "estree-walker": "^3.0.3",
     "is-reference": "^3.0.3",
@@ -111,6 +112,7 @@
     "agadoo": "^3.0.0",
     "dts-buddy": "^0.4.7",
     "esbuild": "^0.24.2",
+    "eslump": "^3.0.0",
     "happy-dom": "^16.7.2",
     "jsdom": "22.0.0",
     "kleur": "^4.1.5",
@@ -119,6 +121,7 @@
     "source-map": "^0.7.4",
     "tiny-glob": "^0.2.9",
     "typescript": "~5.7.3",
-    "vitest": "^0.33.0"
+    "vitest": "^0.33.0",
+    "uvu": "^0.5.6"
   }
 }

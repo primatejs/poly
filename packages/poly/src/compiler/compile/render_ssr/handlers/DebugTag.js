@@ -1,4 +1,4 @@
-import { x, p } from "code-red";
+import { x, p } from "#code-red";
 
 /**
  * @param {import('../../nodes/DebugTag.js').default} node

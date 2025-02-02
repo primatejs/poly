@@ -1,4 +1,4 @@
-import { b, x, p } from "code-red";
+import { b, x, p } from "#code-red";
 import Renderer from "./Renderer.js";
 import { walk } from "estree-walker";
 import { extract_names } from "periscopic";

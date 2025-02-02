@@ -1,5 +1,5 @@
 import Wrapper from "./shared/Wrapper.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import add_event_handlers from "./shared/add_event_handlers.js";
 import add_actions from "./shared/add_actions.js";
 import EventHandler from "./Element/EventHandler.js";

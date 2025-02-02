@@ -1,6 +1,6 @@
 import Wrapper from "./shared/Wrapper.js";
 import FragmentWrapper from "./Fragment.js";
-import { b, p, x } from "code-red";
+import { b, p, x } from "#code-red";
 import { sanitize } from "../../../utils/names.js";
 import add_to_set from "../../utils/add_to_set.js";
 import get_slot_data from "../../utils/get_slot_data.js";

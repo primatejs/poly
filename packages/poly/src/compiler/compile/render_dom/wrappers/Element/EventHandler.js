@@ -1,4 +1,4 @@
-import { b, x, p } from "code-red";
+import { b, x, p } from "#code-red";
 
 const TRUE = x`true`;
 const FALSE = x`false`;

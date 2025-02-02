@@ -1,4 +1,4 @@
-import { x } from "code-red";
+import { x } from "#code-red";
 import { walk } from "estree-walker";
 import is_reference from "is-reference";
 import { clone } from "../../../utils/clone.js";

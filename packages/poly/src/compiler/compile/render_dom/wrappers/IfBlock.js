@@ -1,7 +1,7 @@
 import Wrapper from "./shared/Wrapper.js";
 import create_debugging_comment from "./shared/create_debugging_comment.js";
 import FragmentWrapper from "./Fragment.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import { walk } from "estree-walker";
 import { is_head } from "./shared/is_head.js";
 import { push_array } from "../../../utils/push_array.js";

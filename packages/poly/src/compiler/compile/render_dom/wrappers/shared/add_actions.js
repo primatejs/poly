@@ -1,4 +1,4 @@
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import is_contextual from "../../../nodes/shared/is_contextual.js";
 
 /**

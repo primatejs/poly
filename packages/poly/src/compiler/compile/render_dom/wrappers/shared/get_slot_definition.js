@@ -1,4 +1,4 @@
-import { x, p } from "code-red";
+import { x, p } from "#code-red";
 
 /**
  * @param {import('../../Block.js').default} block

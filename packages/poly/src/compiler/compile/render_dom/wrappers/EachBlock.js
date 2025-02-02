@@ -1,7 +1,7 @@
 import Wrapper from "./shared/Wrapper.js";
 import create_debugging_comment from "./shared/create_debugging_comment.js";
 import FragmentWrapper from "./Fragment.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import get_object from "../../utils/get_object.js";
 import { add_const_tags, add_const_tags_context } from "./shared/add_const_tags.js";
 import Expression from "../../nodes/shared/Expression.js";

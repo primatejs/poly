@@ -1,4 +1,4 @@
-import { x } from "code-red";
+import { x } from "#code-red";
 import get_slot_data from "../../utils/get_slot_data.js";
 import { get_slot_scope } from "./shared/get_slot_scope.js";
 

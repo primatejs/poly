@@ -1,5 +1,5 @@
 import { string_literal } from "../../../utils/stringify.js";
-import { x } from "code-red";
+import { x } from "#code-red";
 import { escape } from "../../../../../shared/utils/escape.js";
 
 /**

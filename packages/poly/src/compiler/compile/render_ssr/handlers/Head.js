@@ -1,4 +1,4 @@
-import { x } from "code-red";
+import { x } from "#code-red";
 
 /**
  * @param {import('../../nodes/Head.js').default} node

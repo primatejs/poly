@@ -1,6 +1,6 @@
 import fix_attribute_casing from "./fix_attribute_casing.js";
 import { string_literal } from "../../../utils/stringify.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import handle_select_value_binding from "./handle_select_value_binding.js";
 import { namespaces } from "../../../../utils/namespaces.js";
 import { boolean_attributes } from "../../../../../shared/boolean_attributes.js";

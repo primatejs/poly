@@ -1,6 +1,6 @@
 import Wrapper from "./shared/Wrapper.js";
 import create_debugging_comment from "./shared/create_debugging_comment.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import FragmentWrapper from "./Fragment.js";
 import ThenBlock from "../../nodes/ThenBlock.js";
 import CatchBlock from "../../nodes/CatchBlock.js";

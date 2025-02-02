@@ -1,4 +1,4 @@
-import { b } from "code-red";
+import { b } from "#code-red";
 import { string_literal } from "../utils/stringify.js";
 import Renderer from "./Renderer.js";
 import { extract_names } from "periscopic";

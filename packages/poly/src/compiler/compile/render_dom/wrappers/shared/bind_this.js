@@ -1,4 +1,4 @@
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import { compare_node } from "../../../utils/compare_node.js";
 
 /**

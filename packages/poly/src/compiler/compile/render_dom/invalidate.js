@@ -1,5 +1,5 @@
 import { nodes_match } from "../../utils/nodes_match.js";
-import { x } from "code-red";
+import { x } from "#code-red";
 
 /**
  * @param {import('./Renderer.js').default} renderer

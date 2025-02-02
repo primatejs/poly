@@ -1,5 +1,5 @@
 import Wrapper from "./shared/Wrapper.js";
-import { x } from "code-red";
+import { x } from "#code-red";
 
 /** @extends Wrapper<import('../../nodes/Text.js').default> */
 export default class TextWrapper extends Wrapper {

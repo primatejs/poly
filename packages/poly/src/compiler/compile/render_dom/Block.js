@@ -1,4 +1,4 @@
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 import { is_head } from "./wrappers/shared/is_head.js";
 import { regex_double_quotes } from "../../utils/patterns.js";
 import { flatten } from "../../utils/flatten.js";

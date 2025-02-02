@@ -1,4 +1,4 @@
-import { p, x } from "code-red";
+import { p, x } from "#code-red";
 import { string_literal } from "./stringify.js";
 
 /**

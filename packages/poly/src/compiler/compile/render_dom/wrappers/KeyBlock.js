@@ -1,7 +1,7 @@
 import Wrapper from "./shared/Wrapper.js";
 import create_debugging_comment from "./shared/create_debugging_comment.js";
 import FragmentWrapper from "./Fragment.js";
-import { b, x } from "code-red";
+import { b, x } from "#code-red";
 
 /** @extends Wrapper<import('../../nodes/KeyBlock.js').default> */
 export default class KeyBlockWrapper extends Wrapper {
