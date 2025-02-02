@@ -16,7 +16,7 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.19.0",
-    "@types/node": "^22.10.10",
+    "@types/node": "^22.13.0",
     "eslint": "^9.19.0",
     "livetypes": "^0.2.0",
     "maximin": "^0.4.0",
