@@ -1,7 +1,10 @@
 import * as acorn from "acorn";
 import { walk } from "estree-walker";
-import { id, re } from "./utils/id.js";
 import { get_comment_handlers } from "./utils/comments.js";
+import { id, re } from "./utils/id.js";
+import { importAttributes } from "acorn-import-attributes";
+
+const parser = acorn.Parser.extend(importAttributes);
 
 /** @typedef {import('estree').Expression} Expression */
 /** @typedef {import('estree').Node} Node */
@@ -283,7 +286,7 @@ export function b(strings, ...values) {
   const comments = [];
 
   try {
-    let ast = /** @type {any} */ acorn.parse(str, acorn_opts(comments, str));
+    let ast = /** @type {any} */ parser.parse(str, acorn_opts(comments, str));
 
     ast = inject(str, ast, values, comments);
 
@@ -308,7 +311,7 @@ export function x(strings, ...values) {
   try {
     let expression =
     /** @type {Expression & { start: Number, end: number }} */
-        acorn.parseExpressionAt(str, 0, acorn_opts(comments, str))
+        parser.parseExpressionAt(str, 0, acorn_opts(comments, str))
       ;
     const match = /\S+/.exec(str.slice(expression.end));
     if (match) {
@@ -339,7 +342,7 @@ export function p(strings, ...values) {
 
   try {
     let expression = /** @type {any} */
-      acorn.parseExpressionAt(str, 0, acorn_opts(comments, str))
+      parser.parseExpressionAt(str, 0, acorn_opts(comments, str))
     ;
 
     expression = inject(str, expression, values, comments);
@@ -384,7 +387,7 @@ export const parse = (source, opts) => {
   /** @type {CommentWithLocation[]} */
   const comments = [];
   const { onComment, enter, leave } = get_comment_handlers(comments, source);
-  const ast = /** @type {any} */ acorn.parse(source, { onComment, ...opts });
+  const ast = /** @type {any} */ parser.parse(source, { onComment, ...opts });
   walk(ast, { enter, leave });
   return ast;
 };
@@ -399,7 +402,7 @@ export const parseExpressionAt = (source, index, opts) => {
   const comments = [];
   const { onComment, enter, leave } = get_comment_handlers(comments, source);
   const ast = /** @type {any} */
-    acorn.parseExpressionAt(source, index, { onComment, ...opts })
+    parser.parseExpressionAt(source, index, { onComment, ...opts })
   ;
   walk(ast, { enter, leave });
   return ast;
