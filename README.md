@@ -19,6 +19,12 @@ Poly is fully compatible with Svelte 4. In particular existing code, including
 code that uses `<svelte:...>` tags, should work flawlessly. Please file an 
 issue if your existing Svelte 4 code doesn't work in Poly.
 
+## Documentation
+
+The Svelte 4 docs are available at https://v4.svelte.dev. At the time, Poly does
+not have a separate documentation website as its API does not diverge in any way
+from Svelte 4's.
+
 ## How to run
 
 ### esbuild
